@@ -1,15 +1,54 @@
-# Requirements, qualification and compliance
+# Bid/No-Bid and capture
 
-Keep three outcomes separate: extracting what the solicitation requires, assessing the company's fit, and tracking how the response satisfies each requirement. Do not label one as another.
+Keep three outcomes separate: extracting what the solicitation requires, assessing the company's fit, and tracking how a response satisfies each requirement. Do not label one as another.
 
-Read an existing completed requirements package or analysis when the connected tools support it. An unavailable result is not permission to create a new paid run. The source documents and versions must match the request; do not reuse results for the wrong amendment or company profile.
+By default, do the analysis in the user's own agent from the documents you read in full. Use G2X-hosted analysis only when the user chooses it. Prefer an existing completed run. Reading must not quietly become paid processing: check what a tool does before starting it. The capture tools below start paid work on G2X. Results are scoped to the user's account and its proposal workspaces.
 
-When new analysis is needed, use your own model with the accessible source documents and company evidence. Choose documents deliberately: include the relevant instructions and amendments as well as the statement of work. Check the target company or profile and the intended workspace. Build the requested requirements, qualification or compliance output, keep the citations, and follow [Save work in G2X](work-products.md). A draft memo saved in the library is not the same as updating the structured requirements or qualification in a pursuit.
+For a hosted run, keep the run and workspace IDs and the selected document IDs. Poll the same run instead of starting another. A timeout alone does not prove failure. Never mark a requirement compliant because it was extracted. The bid decision stays with the user.
 
-If the user chooses G2X-hosted analysis, use `g2x_shred_opportunity` for requirements or `g2x_qualify_opportunity` for company fit, and only when the current tools expose them. Check their current schemas, the account's access and any confirmed spending limits. Use [G2X pricing](https://g2x.com/pricing) for plan information and do not invent per-call prices. A request for a compliance matrix alone does not require a hosted run when the available evidence supports doing the work in this agent.
+### `g2x_prepare_opportunity_documents`
 
-For a hosted run, keep the workspace and run IDs, the selected document IDs and the returned status. Poll `g2x_get_analysis_run` at the indicated interval with a bounded wait. Resume the same run after a timeout. Read `g2x_compliance_matrix` with the identifier its current schema requires; do not guess whether that is a workspace, extraction or qualification run ID. Never invent a completed run or review receipt to make an agent-authored result fit that schema.
+Open or create the user's G2X workspace for an opportunity and prepare its source documents for analysis, then list them. This is a deliberate action: it may start reading documents that are not on file yet and the workspace's requirements extraction.
 
-A useful requirements output includes the requirement, its type (mandatory or desirable where supported), the evidence citation and any unresolved interpretation. A compliance output also distinguishes company evidence, response coverage, owner and review status where supported. Never mark a requirement "compliant" because it was extracted or because a model produced a plausible answer.
+- Inputs: `opportunity_id` (required).
+- Output: the workspace's document rows. A new workspace is named as new; a reused workspace starts nothing new. To list what is on file without starting anything, use the document listing in [Opportunities and documents](opportunities.md) instead.
+- Plan: Starter and up. Write. On the research endpoint: no.
+- Example: `{"opportunity_id": "<id from a search result>"}`
 
-Return the completed artifact and its material gaps, or the pending run and the next retrieval step. The bid decision stays with the user. Updating a pipeline stage or CRM after analysis is a separate requested account action.
+### `g2x_shred_opportunity`
+
+Start a G2X requirements extraction over the opportunity's full document set: solicitation, attachments and amendments. Choose documents deliberately; include instructions and amendments as well as the statement of work.
+
+- Inputs: `opportunity_id` (required); `selected_attachment_ids` (source attachment identifiers to read, up to 200; omit to read the default source set; giving them replaces the workspace's saved selection).
+- Output: a run identifier. A run already in flight is joined, not duplicated. The completed run holds typed, cited requirements with family, kind and source location. Read it back with the run tool below.
+- Plan: Starter and up. Write. On the research endpoint: no.
+- Example: `{"opportunity_id": "<opportunity id>"}`
+
+### `g2x_qualify_opportunity`
+
+Start G2X's quick Bid/No-Bid analysis of an opportunity against a company profile.
+
+- Inputs: exactly one of `opportunity_id` or `workspace_id` (required); `profile_id` (company profile to qualify against; omit for the account's default profile; giving one replaces the workspace's selected profile); `name` (optional run name shown in G2X).
+- Output: a run identifier. A profile missing fields answers `blocked` instead of running; report what is missing. The completed analysis holds a go, go-with-risks or no-go recommendation, overall and dimension scores, blockers, risks, advantages, gaps, possible partners and what could change the answer.
+- Plan: Starter and up. Write. On the research endpoint: no.
+- Example: `{"opportunity_id": "<opportunity id>"}`
+
+### `g2x_get_analysis_run`
+
+Report a capture run's status and, once it completes, its results. It never starts a run. Poll it at a sensible interval with a bounded wait, and resume the same run after a slow response.
+
+- Inputs: exactly one of `run_id` (an extraction or qualification run id) or `opportunity_id` (lists earlier runs on that opportunity, newest first, without starting one).
+- Output: run status, and on completion the extracted requirements, compliance totals, or the Bid/No-Bid verdict with dimensions, blockers, risks and evidence. With `opportunity_id`, the list of earlier runs. If there is no earlier analysis, it says so; starting one is a separate, explicit step.
+- Plan: all plans. Read only. Checking a run does not spend a capture slot. On the research endpoint: no.
+- Example: `{"run_id": "<run id from the start call>"}`
+
+### `g2x_compliance_matrix`
+
+Read the compliance matrix a requirements run produced. It reads a stored matrix and never creates one. Do not guess the identifier kind; use the run or workspace id a previous call returned.
+
+- Inputs: `run_id` (a compliance or qualification run id), or `workspace_id` (reads its latest matrix). Give at least one.
+- Output: one row per extracted requirement with its status (met, partial, missing), the evidence it needs, citations to the source documents and which proposal sections cover it. Extracted rows are not evidence that the company complies.
+- Plan: all plans. Read only. On the research endpoint: no.
+- Example: `{"run_id": "<run id from the completed run>"}`
+
+A useful requirements output keeps each requirement, whether it is mandatory or desirable where the source says, its citation and any open interpretation. When you build a brief or matrix in the agent, keep source document and version IDs with it. Updating a pipeline stage or CRM record after analysis is a separate requested action.
