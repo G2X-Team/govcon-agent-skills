@@ -1,0 +1,11 @@
+interface:
+  display_name: "Government Contracting by G2X"
+  short_description: "Government contracting sales, BD and capture with G2X"
+  default_prompt: "Use $government-contracting to help with this pursuit. Show the evidence, useful work product and next decision."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "govcon-mcp"
+      description: "G2X government market intelligence and account workflows"
+      transport: "streamable_http"
+      url: "https://mcp.g2x.com/mcp"

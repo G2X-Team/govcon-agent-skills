@@ -1,6 +1,6 @@
 interface:
-  display_name: "GovCon MCP by G2X"
-  short_description: "Research GovCon with G2X context and work in your G2X account"
+  display_name: "Government Contracting by G2X (compatible entry)"
+  short_description: "Government sales and capture; existing govcon-mcp entry"
   default_prompt: "Use $govcon-mcp to research this pursuit. Show the evidence behind each recommendation and tell me what we still need to learn before we bid."
 dependencies:
   tools:

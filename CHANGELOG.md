@@ -1,3 +1,11 @@
+## 2.0.0 - October 17, 2026 (review candidate)
+
+- Add Government Contracting as the main entry for government sales, business development and capture.
+- Add 24 self-contained focused workflow skills powered by GovCon MCP.
+- Preserve the govcon-mcp entry and technical references for existing installs; compatible entry version 1.5.0.
+- Extend validation to every skill and standalone reference boundary.
+- Publication and skills.sh discovery from the released source remain separate from this candidate.
+
 # Changelog
 
 ## 1.4.0 (2026-10-12)

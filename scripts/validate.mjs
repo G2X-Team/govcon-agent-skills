@@ -108,6 +108,37 @@ for (const file of files) {
   }
 }
 
+// Focused skills must work when installed alone. Validate names, known tools
+// and every local reference, rather than assuming sibling skills are present.
+const skillRoots = readdirSync(join(root, "skills"), { withFileTypes: true })
+  .filter(entry => entry.isDirectory()).map(entry => join(root, "skills", entry.name));
+for (const dir of skillRoots) {
+  if (dir === skillDir) continue;
+  const entry = join(dir, "SKILL.md");
+  if (!existsSync(entry)) { errors.push(`${dir}: missing SKILL.md`); continue; }
+  const body = readFileSync(entry, "utf8");
+  const name = body.match(/^name:\s*(\S+)\s*$/m)?.[1];
+  if (name !== dir.split("/").at(-1)) errors.push(`${entry}: name does not match folder`);
+  if (!/^description:\s*\S/m.test(body)) errors.push(`${entry}: missing description`);
+  if (!/version:\s*"?\d+\.\d+\.\d+"?/.test(body)) errors.push(`${entry}: missing version`);
+  for (const file of markdownFiles(dir)) {
+    const text = readFileSync(file, "utf8");
+    if (text.includes("—") || /\bassistant\b/i.test(text)) errors.push(`${file}: writing rule violation`);
+    for (const tool of text.match(TOOL_NAME) ?? []) {
+      if (!registry.has(tool)) errors.push(`${file}: unknown tool ${tool}`);
+    }
+    for (const match of text.matchAll(/\]\(([^)]+)\)/g)) {
+      const target = match[1].split("#")[0];
+      if (!target || /^[a-z]+:/i.test(target)) continue;
+      const resolved = join(dirname(file), target);
+      if (!resolved.startsWith(dir + "/") || !existsSync(resolved)) {
+        errors.push(`${file}: reference is missing or outside this standalone skill: ${target}`);
+      }
+    }
+  }
+}
+console.log(`Skill folders: ${skillRoots.length}; umbrella + 24 focused skills + compatible MCP entry.`);
+
 const names = [...registry.keys()].sort();
 console.log(`GovCon MCP skill v${version}`);
 console.log(`Registry tools (${names.length}):`);

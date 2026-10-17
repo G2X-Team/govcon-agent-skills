@@ -3,10 +3,12 @@ name: govcon-mcp
 description: Research government contracting opportunities, markets, companies, people and events with G2X context; read complete solicitations and analyze them in the user's own agent; save supported work products in G2X; and make requested changes to G2X pursuits and CRM. Use with a connected G2X account, including when moving a workflow from another product or a spreadsheet into G2X.
 metadata:
   author: G2X
-  version: "1.4.0"
+  version: "1.5.0"
 ---
 
-# GovCon MCP
+# Government Contracting: compatible GovCon MCP entry
+
+The main entry for new installs is `government-contracting`, with focused skills for individual sales, business development and capture jobs. This existing `govcon-mcp` name remains usable for installed agents. Its complete technical references and workflows stay together in this folder; no other skill install is required to use it.
 
 G2X is a federal growth intelligence platform, trusted by leading government contractors and built and run by career government contracting growth and execution professionals. It connects analyst-curated intelligence with opportunity and award research, company and agency records, GovCon CRM, watchlists and pipelines, Bid Hub and Lumen. This skill teaches an agent to use that context the way an experienced capture or BD lead would: find the right record, read the whole document, keep the citations, keep what is known apart from what is assumed, and leave the work where the team can find it.
 
