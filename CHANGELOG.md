@@ -1,5 +1,22 @@
 # Changelog
 
+## 2.0.0 (2026-10-17)
+
+The repository is now `G2X-Team/govcon-agent-skills` and holds 25 skills: the GovCon MCP skill and 24 focused workflow skills. It is also the public listing repository for GovCon MCP by G2X.
+
+### Added
+
+- 24 self-contained workflow skills, each installable alone: `govcon-agency-account-plan`, `govcon-amendment-review`, `govcon-bid-decision`, `govcon-buyer-meeting-prep`, `govcon-capture-plan`, `govcon-company-brief`, `govcon-company-diligence`, `govcon-crm-follow-up`, `govcon-forecast-research`, `govcon-incumbent-research`, `govcon-industry-day-prep`, `govcon-labor-rate-research`, `govcon-market-research`, `govcon-opportunity-discovery`, `govcon-pipeline-review`, `govcon-recompete-research`, `govcon-requirements-review`, `govcon-research-handoff`, `govcon-response-outline`, `govcon-sled-discovery`, `govcon-supply-item-research`, `govcon-teaming-partners`, `govcon-vehicle-strategy` and `govcon-watchlist-management`.
+- `server.json`, the MCP Registry entry for GovCon MCP by G2X, identical to https://mcp.g2x.com/server.json, and the G2X logo (`logo.svg`, `logo-400.png`).
+- A GovCon MCP section in the README: what it does, how to connect, example prompts and links.
+- Validation for every skill folder: Agent Skills frontmatter, known tool names, links that stay inside the skill, a README that lists exactly the skills present, and a valid `server.json`. `--live` also compares `server.json` with the live manifest.
+
+### Changed
+
+- Install and listing commands use the new repository name. The old `G2X-Team/govcon-skills` URL redirects.
+
+The `govcon-mcp` skill is unchanged at 1.4.0.
+
 ## 1.4.0 (2026-10-12)
 
 Weekly refresh against the full GovCon MCP tool registry. The skill now documents every registered tool by name, with a validator to keep it that way.
