@@ -60,7 +60,7 @@ G2X is a federal growth intelligence platform built and run by career government
 
 The GovCon MCP skill (version 1.4.0) gives your agent a working knowledge of how pursuit work actually gets done: which G2X tool answers which question, how to read a solicitation completely instead of skimming one page, how to check an incumbent or teaming partner without confusing a corporate family for a single awardee, when a market number is a real total and when it is a sample, and how to save the finished brief or matrix in your G2X account so your team can pick it up.
 
-It covers all 66 GovCon MCP tools: calibration and usage, opportunity search and whole documents, awards and recompetes, companies and teaming, forecasts and events, pipelines and saved searches, GovCon CRM, Bid/No-Bid capture, DLA supply items, labor rates and GSA eBuy. There is one entry point, twelve reference files and nine end-to-end workflows. The agent loads only what the task in front of it needs.
+It covers the GovCon MCP's tool families: calibration and usage, opportunity search and whole documents, awards and recompetes, companies and teaming, forecasts and events, pipelines and saved searches, GovCon CRM, Bid/No-Bid capture, DLA supply items, labor rates and GSA eBuy. There is one entry point, twelve reference files and nine end-to-end workflows. The agent loads only what the task in front of it needs.
 
 Your agent does the reasoning and drafting with its own model. G2X supplies the records, the documents and the account actions.
 
