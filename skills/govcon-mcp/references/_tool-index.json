@@ -1,0 +1,468 @@
+{
+  "generated": "2026-10-12",
+  "source": "G2X GovCon MCP tool registry (tools/list). One entry per registered tool.",
+  "tools": [
+    {
+      "name": "g2x_add_pipeline_note",
+      "area": "pipelines",
+      "plan": "When the connection offers it",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_add_to_pipeline",
+      "area": "pipelines",
+      "plan": "When the connection offers it",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_calibrate_session",
+      "area": "account",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_company_contract_history",
+      "area": "companies",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_company_evidence",
+      "area": "companies",
+      "plan": "When the connection offers it",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_company_signals",
+      "area": "companies",
+      "plan": "Starter and up",
+      "access": "read",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_company_web_profile",
+      "area": "companies",
+      "plan": "Starter and up",
+      "access": "read",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_compliance_matrix",
+      "area": "capture",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_create_ai_profile",
+      "area": "account",
+      "plan": "When the connection offers it",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_create_pipeline",
+      "area": "pipelines",
+      "plan": "When the connection offers it",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_crm_add_note",
+      "area": "crm",
+      "plan": "All plans",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_crm_add_task",
+      "area": "crm",
+      "plan": "All plans",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_crm_find",
+      "area": "crm",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_crm_get_record",
+      "area": "crm",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_crm_log_interaction",
+      "area": "crm",
+      "plan": "All plans",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_crm_save_account",
+      "area": "crm",
+      "plan": "All plans",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_crm_save_contact",
+      "area": "crm",
+      "plan": "All plans",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_crm_set_follow_up",
+      "area": "crm",
+      "plan": "All plans",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_delete_pipeline",
+      "area": "pipelines",
+      "plan": "When the connection offers it",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_expiring_awards",
+      "area": "awards-vehicles",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_forecast_scan",
+      "area": "forecasts-events",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_get_ai_profile",
+      "area": "account",
+      "plan": "When the connection offers it",
+      "access": "read",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_get_analysis_run",
+      "area": "capture",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_get_ebuy",
+      "area": "gsa-ebuy",
+      "plan": "Accounts with GSA eBuy in G2X",
+      "access": "read",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_get_event",
+      "area": "forecasts-events",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_get_graph_neighborhood",
+      "area": "companies",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_get_pipeline",
+      "area": "pipelines",
+      "plan": "When the connection offers it",
+      "access": "read",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_get_record",
+      "area": "opportunities",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_labor_rates",
+      "area": "labor-rates",
+      "plan": "Accounts that include published labor rates",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_list_ai_profiles",
+      "area": "account",
+      "plan": "When the connection offers it",
+      "access": "read",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_list_ebuy_attachments",
+      "area": "gsa-ebuy",
+      "plan": "Accounts with GSA eBuy in G2X",
+      "access": "read",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_list_my_company_profiles",
+      "area": "account",
+      "plan": "When the connection offers it",
+      "access": "read",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_list_pipeline_notes",
+      "area": "pipelines",
+      "plan": "When the connection offers it",
+      "access": "read",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_list_pipelines",
+      "area": "pipelines",
+      "plan": "When the connection offers it",
+      "access": "read",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_list_saved_searches",
+      "area": "pipelines",
+      "plan": "When the connection offers it",
+      "access": "read",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_list_watchlist",
+      "area": "pipelines",
+      "plan": "When the connection offers it",
+      "access": "read",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_move_pipeline_item",
+      "area": "pipelines",
+      "plan": "When the connection offers it",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_nsn_lookup",
+      "area": "dla-nsn",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_nsn_search",
+      "area": "dla-nsn",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_opportunity_attachment_text",
+      "area": "opportunities",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_opportunity_documents",
+      "area": "opportunities",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_prepare_opportunity_documents",
+      "area": "capture",
+      "plan": "Starter and up",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_qualify_opportunity",
+      "area": "capture",
+      "plan": "Starter and up",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_query",
+      "area": "awards-vehicles",
+      "plan": "All plans",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_rank_companies",
+      "area": "companies",
+      "plan": "When the connection offers it",
+      "access": "read",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_recompete_radar",
+      "area": "awards-vehicles",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_remove_from_pipeline",
+      "area": "pipelines",
+      "plan": "When the connection offers it",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_run_saved_search",
+      "area": "pipelines",
+      "plan": "When the connection offers it",
+      "access": "read",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_save_search",
+      "area": "pipelines",
+      "plan": "When the connection offers it",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_search_companies",
+      "area": "companies",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_search_ebuy",
+      "area": "gsa-ebuy",
+      "plan": "Accounts with GSA eBuy in G2X",
+      "access": "read",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_search_events",
+      "area": "forecasts-events",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_search_opportunities",
+      "area": "opportunities",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_search_records",
+      "area": "opportunities",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_search_supplementary",
+      "area": "opportunities",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_shred_opportunity",
+      "area": "capture",
+      "plan": "Starter and up",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_socioeconomic_status",
+      "area": "companies",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_teaming_partners",
+      "area": "companies",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_unwatch_records",
+      "area": "pipelines",
+      "plan": "When the connection offers it",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_update_ai_profile",
+      "area": "account",
+      "plan": "When the connection offers it",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_update_my_company_profile",
+      "area": "account",
+      "plan": "Starter and up, when the connection offers it",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_update_saved_search",
+      "area": "pipelines",
+      "plan": "When the connection offers it",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_usage",
+      "area": "account",
+      "plan": "When the connection offers it",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_vehicle_usage",
+      "area": "awards-vehicles",
+      "plan": "All plans",
+      "access": "read",
+      "research_endpoint": true
+    },
+    {
+      "name": "g2x_watch_codes",
+      "area": "pipelines",
+      "plan": "When the connection offers it",
+      "access": "write",
+      "research_endpoint": false
+    },
+    {
+      "name": "g2x_watch_records",
+      "area": "pipelines",
+      "plan": "All plans",
+      "access": "write",
+      "research_endpoint": false
+    }
+  ]
+}
