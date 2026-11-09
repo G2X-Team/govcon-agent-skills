@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.0 (2026-11-09)
+
+### Added
+
+- `cookbook/`: 49 step-by-step recipes for the GovCon MCP, the same recipes as the cookbook in the G2X docs (https://g2x.com/docs/cookbook). Each recipe has what you get, a prompt to paste into your AI agent, what you get back, how to read and check it, variations, and a link to its docs page.
+
 ## 2.0.0 (2026-10-17)
 
 The repository is now `G2X-Team/govcon-agent-skills` and holds 25 skills: the GovCon MCP skill and 24 focused workflow skills. It is also the public listing repository for GovCon MCP by G2X.

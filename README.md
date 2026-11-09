@@ -172,6 +172,10 @@ Each focused skill is self-contained and can be installed alone. You do not need
 
 > Use the pipeline review skill to prepare decisions and an exact change preview. Do not change records until I request the specific changes.
 
+## Cookbook
+
+[`cookbook/`](./cookbook/README.md) holds 49 step-by-step recipes, from finding open opportunities by NAICS to building a compliance matrix or researching the incumbent on a recompete. Each one gives you a prompt to paste into your AI agent, what you get back, and how to check it. They are the same recipes as the cookbook in the G2X docs: https://g2x.com/docs/cookbook
+
 ## Validate this skill
 
 The reference is checked against the tool registry in `skills/govcon-mcp/references/_tool-index.json`. To verify that every tool name in the skill is real and every registered tool is documented exactly once:
