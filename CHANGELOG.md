@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.2.0 (2026-11-23)
+
+### Added
+
+- Two new standalone workflow skills (27 skills total): `govcon-bid-protest-research` (GAO, SBA OHA and Court of Federal Claims bid protest risk research) and `govcon-sbir-sttr-discovery` (SBIR and STTR topic and proposal due-date discovery).
+- Two new end-to-end workflows under `skills/govcon-mcp/workflows/`: `bid-protest-risk-check.md` and `sbir-sttr-topic-screening.md` (11 workflows total).
+
+### Changed
+
+- Updated `govcon-mcp` skill to `1.5.0` and refreshed `skills/govcon-mcp/references/opportunities.md` to document short SAM set-aside codes (`WOSB`, `EDWOSB`, `8(a)`, `SDVOSB`, `HUBZone`), SBA OHA protest filtering (`source_system: "sba_oha"`), and SBIR/STTR proposal due dates.
+
 ## 2.1.0 (2026-11-09)
 
 ### Added

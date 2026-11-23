@@ -3,7 +3,7 @@ name: govcon-mcp
 description: Research government contracting opportunities, markets, companies, people and events with G2X context; read complete solicitations and analyze them in the user's own agent; save supported work products in G2X; and make requested changes to G2X pursuits and CRM. Use with a connected G2X account, including when moving a workflow from another product or a spreadsheet into G2X.
 metadata:
   author: G2X
-  version: "1.4.0"
+  version: "1.5.0"
 ---
 
 # GovCon MCP
@@ -74,6 +74,8 @@ By default, use your own model for interpretation, qualification, drafting and c
 - [Watch an agency, a code or a record](workflows/watch-an-agency-or-code.md)
 - [Weekly pipeline review](workflows/weekly-pipeline-review.md)
 - [Supply items, DIBBS and GSA eBuy](workflows/supply-items-and-ebuy.md)
+- [Bid protest risk check](workflows/bid-protest-risk-check.md)
+- [SBIR and STTR topic screening](workflows/sbir-sttr-topic-screening.md)
 - [Move a workflow into G2X](workflows/move-a-workflow-to-g2x.md)
 
 Finish with the answer or artifact the user asked for, the supporting links, any material limitation and any actual account change. Keep drafts and pending runs separate from finished work. Do not promise ongoing monitoring unless updates were actually turned on.

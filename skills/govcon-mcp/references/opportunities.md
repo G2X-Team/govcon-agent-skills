@@ -17,7 +17,7 @@ Search federal opportunities by keywords, with optional NAICS, fiscal year and d
 
 Search one G2X dataset and get bounded rows with totals and coverage notes. Use it for structured filtering inside one catalog.
 
-- Inputs: `dataset` (required: `opportunities`, `contracts`, `idvs`, `vehicles`, `protests`, `forecasts`, `grants`, `subawards`, `otas`, `entities`, `notices`, `agencies`, `naics` or `psc`); `query` (free text; for contracts an exact PIID resolves directly); `filters` (filter object, at most 10 keys; opportunities take `naics`, `psc`, `notice_type`, `agency_code`, `office_code`, `solicitation_number`, `set_aside`, `active`, `posted_after`, `posted_before`, `response_deadline_after`, `response_deadline_before` and `fiscal_year`; other datasets take their own keys); `page_size` (1 to 50, default 10); `cursor` (continuation from a previous call; resupply the same dataset, query and filters).
+- Inputs: `dataset` (required: `opportunities`, `contracts`, `idvs`, `vehicles`, `protests`, `forecasts`, `grants`, `subawards`, `otas`, `entities`, `notices`, `agencies`, `naics` or `psc`); `query` (free text; for contracts an exact PIID resolves directly); `filters` (filter object, at most 10 keys; opportunities take `naics`, `psc`, `notice_type`, `agency_code`, `office_code`, `solicitation_number`, `set_aside` accepting short SAM codes such as `WOSB`, `EDWOSB`, `8(a)`, `SDVOSB` and `HUBZone` as well as full labels, `active`, `posted_after`, `posted_before`, `response_deadline_after`, `response_deadline_before` and `fiscal_year`; protests accept `source_system` such as `gao`, `sba_oha` and `cofc` plus `outcome`; other datasets take their own keys); `page_size` (1 to 50, default 10); `cursor` (continuation from a previous call; resupply the same dataset, query and filters).
 - Output: rows with a title, key facts and a G2X link where one exists, plus the total, a cursor for the next page and notes on what the answer covers.
 - Plan: all plans. The `protests` dataset is included from the Starter Team plan up; below that the tool returns the plan note and no protest data. Read only. On the research endpoint: yes.
 - Example: `{"dataset": "opportunities", "filters": {"naics": "541512", "agency_code": "VA", "set_aside": "SDVOSB"}}`
@@ -27,7 +27,7 @@ Search one G2X dataset and get bounded rows with totals and coverage notes. Use 
 Search SAM, state and local, DLA DIBBS and SBIR/STTR opportunities together with the text inside their attachments. Use it to find requirement language that a title search misses.
 
 - Inputs: `query` (required, what to look for in opportunity details and inside attachments); `source_families` (`sam`, `sled`, `dibbs`, `sbir_sttr`; default all four); `record_filters` (filter object, at most 10 keys, for example `naics`, `agency_code`, `active`, `posted_range`); `page_size` (1 to 50, default 10); `cursor` (continuation; resupply the same query, families and filters).
-- Output: opportunity rows with G2X links. When the match came from a document, the matching passages come with the file name and page.
+- Output: opportunity rows with G2X links, including SBIR/STTR proposal due dates where published. When the match came from a document, the matching passages come with the file name and page.
 - Plan: all plans, when the connection offers it. Read only. On the research endpoint: yes.
 - Example: `{"query": "zero trust architecture", "source_families": ["sam", "sled"]}`
 

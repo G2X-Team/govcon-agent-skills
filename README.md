@@ -58,9 +58,9 @@ G2X is a federal growth intelligence platform built and run by career government
 
 ## What the skill does
 
-The GovCon MCP skill (version 1.4.0) gives your agent a working knowledge of how pursuit work actually gets done: which G2X tool answers which question, how to read a solicitation completely instead of skimming one page, how to check an incumbent or teaming partner without confusing a corporate family for a single awardee, when a market number is a real total and when it is a sample, and how to save the finished brief or matrix in your G2X account so your team can pick it up.
+The GovCon MCP skill (version 1.5.0) gives your agent a working knowledge of how pursuit work actually gets done: which G2X tool answers which question, how to read a solicitation completely instead of skimming one page, how to check an incumbent or teaming partner without confusing a corporate family for a single awardee, when a market number is a real total and when it is a sample, and how to save the finished brief or matrix in your G2X account so your team can pick it up.
 
-It covers the GovCon MCP's tool families: calibration and usage, opportunity search and whole documents, awards and recompetes, companies and teaming, forecasts and events, pipelines and saved searches, GovCon CRM, Bid/No-Bid capture, DLA supply items, labor rates and GSA eBuy. There is one entry point, twelve reference files and nine end-to-end workflows. The agent loads only what the task in front of it needs.
+It covers the GovCon MCP's tool families: calibration and usage, opportunity search and whole documents, awards and recompetes, companies and teaming, forecasts and events, pipelines and saved searches, GovCon CRM, Bid/No-Bid capture, DLA supply items, labor rates and GSA eBuy. There is one entry point, twelve reference files and eleven end-to-end workflows. The agent loads only what the task in front of it needs.
 
 Your agent does the reasoning and drafting with its own model. G2X supplies the records, the documents and the account actions.
 
@@ -135,9 +135,9 @@ The agent calibrates the session to your company first, checks the connected too
 | [Account, usage and settings](skills/govcon-mcp/references/account.md) | Calibrate the session, check usage, and review AI profiles and claimed company profiles. |
 | [Connection and recovery](skills/govcon-mcp/references/connection.md) | Connect, use the research endpoint, and recover from access, limit and tool errors. |
 
-Nine workflows in [skills/govcon-mcp/workflows](skills/govcon-mcp/workflows) give exact tool sequences: find and qualify opportunities, recompete radar to pipeline, teaming partner search, solicitation to compliance matrix, incumbent and market research, watch an agency or code, weekly pipeline review, supply items and eBuy, and move a workflow into G2X.
+Eleven workflows in [skills/govcon-mcp/workflows](skills/govcon-mcp/workflows) give exact tool sequences: find and qualify opportunities, recompete radar to pipeline, teaming partner search, solicitation to compliance matrix, incumbent and market research, watch an agency or code, weekly pipeline review, supply items and eBuy, bid protest risk check, SBIR and STTR topic screening, and move a workflow into G2X.
 
-## Twenty-four focused workflows
+## Twenty-six focused workflows
 
 Each focused skill is self-contained and can be installed alone. You do not need a sibling skill for its instructions.
 
@@ -146,6 +146,7 @@ Each focused skill is self-contained and can be installed alone. You do not need
 | [Agency Account Plan](skills/govcon-agency-account-plan/SKILL.md) | `govcon-agency-account-plan` | Choose specific government buying offices and build an evidence-backed sales account plan |
 | [Amendment Review](skills/govcon-amendment-review/SKILL.md) | `govcon-amendment-review` | Compare government solicitation amendments and identify response-planning changes |
 | [Bid Decision Research](skills/govcon-bid-decision/SKILL.md) | `govcon-bid-decision` | Prepare an evidence-based pursue, hold or stop recommendation for a government opportunity |
+| [Bid Protest Research](skills/govcon-bid-protest-research/SKILL.md) | `govcon-bid-protest-research` | Research GAO, SBA OHA and Court of Federal Claims bid protest dockets for competitive and status risk |
 | [Buyer Meeting Preparation](skills/govcon-buyer-meeting-prep/SKILL.md) | `govcon-buyer-meeting-prep` | Prepare a government sales meeting around the buyer mission, documented evidence and decision-changing questions |
 | [Capture Planning](skills/govcon-capture-plan/SKILL.md) | `govcon-capture-plan` | Draft a government contracting capture plan with customer questions, company proof, competitive hypotheses and next actions |
 | [Company Brief](skills/govcon-company-brief/SKILL.md) | `govcon-company-brief` | Turn company capabilities and evidence into reusable government contracting research context |
@@ -162,6 +163,7 @@ Each focused skill is self-contained and can be installed alone. You do not need
 | [Solicitation Requirements Review](skills/govcon-requirements-review/SKILL.md) | `govcon-requirements-review` | Read a government solicitation package and build a cited requirements working list |
 | [Research Handoff](skills/govcon-research-handoff/SKILL.md) | `govcon-research-handoff` | Turn government contracting research into a sourced brief and requested G2X handoff |
 | [Proposal Response Outline](skills/govcon-response-outline/SKILL.md) | `govcon-response-outline` | Build a government proposal response outline from the actual solicitation instructions and evaluation criteria |
+| [SBIR and STTR Topic Discovery](skills/govcon-sbir-sttr-discovery/SKILL.md) | `govcon-sbir-sttr-discovery` | Find federal SBIR and STTR topics, proposal due dates and related R&D grants |
 | [State Local and Education Opportunities](skills/govcon-sled-discovery/SKILL.md) | `govcon-sled-discovery` | Research state, local and education procurement opportunities across supported records and source portals |
 | [Supply Item Research](skills/govcon-supply-item-research/SKILL.md) | `govcon-supply-item-research` | Research government supply items, NSNs and supplier evidence |
 | [Teaming Partner Research](skills/govcon-teaming-partners/SKILL.md) | `govcon-teaming-partners` | Find complementary government contracting teaming candidates and prepare diligence |
