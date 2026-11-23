@@ -58,9 +58,9 @@ G2X is a federal growth intelligence platform built and run by career government
 
 ## What the skill does
 
-The GovCon MCP skill (version 1.5.0) gives your agent a working knowledge of how pursuit work actually gets done: which G2X tool answers which question, how to read a solicitation completely instead of skimming one page, how to check an incumbent or teaming partner without confusing a corporate family for a single awardee, when a market number is a real total and when it is a sample, and how to save the finished brief or matrix in your G2X account so your team can pick it up.
+The GovCon MCP skill (version 1.5.1) gives your agent a working knowledge of how pursuit work actually gets done: which G2X tool answers which question, how to read a solicitation completely instead of skimming one page, how to check an incumbent or teaming partner without confusing a corporate family for a single awardee, when a market number is a real total and when it is a sample, and how to save the finished brief or matrix in your G2X account so your team can pick it up.
 
-It covers the GovCon MCP's tool families: calibration and usage, opportunity search and whole documents, awards and recompetes, companies and teaming, forecasts and events, pipelines and saved searches, GovCon CRM, Bid/No-Bid capture, DLA supply items, labor rates and GSA eBuy. There is one entry point, twelve reference files and eleven end-to-end workflows. The agent loads only what the task in front of it needs.
+It covers the GovCon MCP's tool families: calibration and usage, opportunity search and whole documents, awards and recompetes, companies and teaming, forecasts and events, pipelines and saved searches, GovCon CRM, Bid/No-Bid capture, DLA supply items, labor rates and GSA eBuy. There is one entry point, twelve reference files and ten end-to-end workflows. The agent loads only what the task in front of it needs.
 
 Your agent does the reasoning and drafting with its own model. G2X supplies the records, the documents and the account actions.
 
@@ -135,7 +135,7 @@ The agent calibrates the session to your company first, checks the connected too
 | [Account, usage and settings](skills/govcon-mcp/references/account.md) | Calibrate the session, check usage, and review AI profiles and claimed company profiles. |
 | [Connection and recovery](skills/govcon-mcp/references/connection.md) | Connect, use the research endpoint, and recover from access, limit and tool errors. |
 
-Eleven workflows in [skills/govcon-mcp/workflows](skills/govcon-mcp/workflows) give exact tool sequences: find and qualify opportunities, recompete radar to pipeline, teaming partner search, solicitation to compliance matrix, incumbent and market research, watch an agency or code, weekly pipeline review, supply items and eBuy, bid protest risk check, SBIR and STTR topic screening, and move a workflow into G2X.
+Ten workflows in [skills/govcon-mcp/workflows](skills/govcon-mcp/workflows) give exact tool sequences: find and qualify opportunities, recompete radar to pipeline, teaming partner search, solicitation to compliance matrix, incumbent and market research, watch an agency or code, weekly pipeline review, supply items and eBuy, bid protest risk check, and SBIR and STTR topic screening.
 
 ## Twenty-six focused workflows
 

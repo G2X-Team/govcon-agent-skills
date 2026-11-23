@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.2.1 (2026-11-23)
+
+### Removed
+
+- The `move-a-workflow-to-g2x.md` workflow and the `govcon-mcp` skill's guidance on moving work from another product or a spreadsheet into G2X (10 workflows total). The `govcon-mcp` skill is now `1.5.1`.
+
 ## 2.2.0 (2026-11-23)
 
 ### Added

@@ -1,9 +1,9 @@
 ---
 name: govcon-mcp
-description: Research government contracting opportunities, markets, companies, people and events with G2X context; read complete solicitations and analyze them in the user's own agent; save supported work products in G2X; and make requested changes to G2X pursuits and CRM. Use with a connected G2X account, including when moving a workflow from another product or a spreadsheet into G2X.
+description: Research government contracting opportunities, markets, companies, people and events with G2X context; read complete solicitations and analyze them in the user's own agent; save supported work products in G2X; and make requested changes to G2X pursuits and CRM. Use with a connected G2X account.
 metadata:
   author: G2X
-  version: "1.5.0"
+  version: "1.5.1"
 ---
 
 # GovCon MCP
@@ -14,7 +14,7 @@ Help the user research a pursuit, produce the document they need, or make a requ
 
 ## When to use this skill
 
-Use it for any government contracting task the G2X connection can serve: finding and qualifying opportunities, reading solicitations, sizing a market, checking an incumbent or a teaming partner, preparing for an event, checking supply items or labor rates, reviewing GSA eBuy RFQs, and requested changes to watchlists, saved searches, pipelines, CRM and profiles. Also use it when the user wants to do a workflow they run in another product or a spreadsheet in G2X instead. Your agent does the reasoning and drafting with its own model. G2X supplies the records, the documents and the account actions.
+Use it for any government contracting task the G2X connection can serve: finding and qualifying opportunities, reading solicitations, sizing a market, checking an incumbent or a teaming partner, preparing for an event, checking supply items or labor rates, reviewing GSA eBuy RFQs, and requested changes to watchlists, saved searches, pipelines, CRM and profiles. Your agent does the reasoning and drafting with its own model. G2X supplies the records, the documents and the account actions.
 
 ## First moves
 
@@ -76,6 +76,5 @@ By default, use your own model for interpretation, qualification, drafting and c
 - [Supply items, DIBBS and GSA eBuy](workflows/supply-items-and-ebuy.md)
 - [Bid protest risk check](workflows/bid-protest-risk-check.md)
 - [SBIR and STTR topic screening](workflows/sbir-sttr-topic-screening.md)
-- [Move a workflow into G2X](workflows/move-a-workflow-to-g2x.md)
 
 Finish with the answer or artifact the user asked for, the supporting links, any material limitation and any actual account change. Keep drafts and pending runs separate from finished work. Do not promise ongoing monitoring unless updates were actually turned on.
