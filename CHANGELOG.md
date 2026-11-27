@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.2.1 (2026-11-27)
+
+### Changed
+
+- `cookbook/`: the four labor-rate recipes (`benchmark-labor-rates-for-a-bid.md`, `build-an-igce-with-labor-rate-benchmarks.md`, `find-labor-categories-for-a-role.md`, `see-a-companys-published-labor-rates.md`) now ask for, and explain, the source dataset, dataset vintage, rate unit, observation period and contracting authority that come back with the rates, and mark any item the source does not report as unknown. They match the G2X docs cookbook.
+
 ## 2.2.0 (2026-11-23)
 
 ### Added

@@ -22,7 +22,9 @@ Give me the published per-hour ceiling rate statistics for the labor category
 "Project Manager": how many rates, the minimum, the 25th and 75th percentiles,
 the median and the maximum. Name the rates behind the minimum, median and
 maximum so I can look at their contract, education and experience terms.
-Remind me what these numbers are and are not.
+Include the source dataset, dataset vintage, rate unit, observation period and
+contracting authority, and note any item that is unknown. Remind me what these
+numbers are and are not.
 ```
 
 ## What you get back
@@ -49,6 +51,7 @@ The rates behind the minimum, median and maximum:
 ## How to read it
 
 - These are published ceiling rates, the most a holder may charge under its vehicle. They are not offered prices, negotiated prices or what any agency paid.
+- Record the reported source dataset (GSA CALC), dataset vintage when known, unit (USD/hour), observation period (marked unknown when not reported) and contracting authority in your estimate file. Any unreported item is explicitly marked unknown rather than filled in.
 - The spread is wide because one title covers different education, experience, worksite and clearance terms. Narrow the set before you compare it with your requirement.
 - Use the percentiles as a range check against your own build-up. The benchmark supports your analysis of the requirement, the labor mix and the level of effort. It does not replace the independent government cost estimate.
 - Check the official record before you cite a rate in the estimate file.

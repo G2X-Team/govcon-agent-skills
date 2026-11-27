@@ -20,7 +20,9 @@ The GovCon MCP is included on every G2X plan, from Community Edition through Ent
 Benchmark published labor rates for the category "Project Manager". Give me
 the number of rates, the lowest, the 10th, 25th, 50th, 75th and 90th
 percentiles and the highest in dollars per hour. Show who published the lowest,
-the median and the highest rate, and on which schedule and vehicle.
+the median and the highest rate, and on which schedule and vehicle. Include the
+source dataset, dataset vintage, rate unit, observation period and contracting
+authority, and say clearly if any of those is unknown.
 ```
 
 ## What you get back
@@ -34,9 +36,12 @@ Excerpt. 2699 published rates for "project manager", in dollars per hour. The mi
 | Median | 146.6 | CASEPOINT, LLC | MAS | 47QTCA18D00BZ |
 | Highest | 449.75 | FEDERAL MERCHANTS CORP. | MAS | 47QTCA18D00AZ |
 
+The answer also names the source dataset (GSA CALC), the dataset vintage when available (or marks it unknown), the exact unit (USD/hour), the observation period (marked unknown when the dataset does not report one) and the contracting authority (awarded GSA Schedule ceiling rates; not evidence of the price paid on a particular order).
+
 ## How to read it
 
 - These are ceiling rates, the most a company has published it will charge on a vehicle. They are not what anyone offered on your bid and not what any agency paid.
+- Check the source dataset, dataset vintage, unit (USD/hour), observation period and authority reported alongside the figures. Any item the source does not supply is labeled unknown rather than guessed.
 - The spread is wide, from 38.06 to 449.75 dollars per hour, because "Project Manager" covers very different jobs. Narrow the benchmark by education, years of experience, clearance or worksite before you price against it.
 - The median is the middle published rate, not an average. The 25th to 75th percentile band is a safer range to test against than the extremes.
 - Your own price still depends on your indirect rates, your wrap and the solicitation's evaluation approach. Check the official record before you rely on a figure or name a competitor in a price volume.

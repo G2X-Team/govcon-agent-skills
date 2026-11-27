@@ -20,7 +20,9 @@ The GovCon MCP is included on every G2X plan, from Community Edition through Ent
 Show the published labor rates for the company with UEI NKKQE6FG4C28. List
 the highest rates first. For each give the labor category, the rate per hour,
 the education level, the years of experience, the worksite, the schedule and
-the vehicle number, and tell me how many rates the company has published.
+the vehicle number. Include the source dataset, dataset vintage, rate unit,
+observation period and contracting authority, and tell me how many rates the
+company has published.
 ```
 
 ## What you get back
@@ -37,6 +39,7 @@ Excerpt. The answer reported 366 published rates for BY LIGHT PROFESSIONAL IT SE
 ## How to read it
 
 - These are ceiling rates the company has published on a vehicle. They are not prices it offered on a bid, and a company can bid lower.
+- Review the reported source dataset, dataset vintage when available, unit (USD/hour), observation period (marked unknown when not reported) and contracting authority alongside the rate card. When the source does not supply one of those fields, the answer marks it unknown.
 - The same rate can repeat across rows. Two similar titles carry 213.57 here, so count distinct categories, not rows, when you size up a rate card.
 - The top rates here are for an overseas (OCONUS) category. Do not compare them with a domestic category without checking the worksite and the category you will actually price. Two rates with the same title can ask for different education, experience or clearance.
 - A few rows are a first look at 366 rates. Ask for a labor category or a price range to see the part of the rate card you care about. Check the official record before you rely on a figure.

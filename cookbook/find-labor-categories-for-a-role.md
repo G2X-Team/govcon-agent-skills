@@ -19,8 +19,9 @@ The GovCon MCP is included on every G2X plan, from Community Edition through Ent
 ```text
 Search G2X for published labor categories that match "cloud engineer". For the first
 five, show the exact title, company, ceiling rate per hour, minimum years of experience,
-education, worksite and security clearance. Tell me how many matches there are and
-what these rates do not tell me.
+education, worksite and security clearance. Include the source dataset, dataset
+vintage, rate unit, observation period and contracting authority, tell me how many
+matches there are and explain what these rates do not tell me.
 ```
 
 ## What you get back
@@ -39,6 +40,7 @@ Excerpt. Five matches titled "Cloud Engineer", in dollars per hour, out of 300 f
 ## How to read it
 
 - These are published ceiling rates, not offered prices. Prices negotiated on a task order can differ.
+- Each answer reports its source dataset, dataset vintage when available, unit (USD/hour), observation period (marked unknown when not reported) and contracting authority, and labels any missing detail as unknown rather than guessing.
 - The same title ranges from 83.19 to 216.12 per hour in this excerpt. Compare like with like: minimum years, education and clearance sit beside every rate. The count of 300 is a floor: more may match.
 - Vendors word titles differently. If a role has no match, ask for synonyms such as architect or DevOps engineer.
 - Rates do not show the work, location adjustments, discounts or whether a vendor will bid. Use them as a benchmark, not a quote.
